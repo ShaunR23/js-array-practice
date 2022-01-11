@@ -4,7 +4,18 @@
 // ---------------------
 
 // Put your answer below -------------------------
+myFunction = function(str, i){
+    let myArr = [];
 
+    for (let j = 0; j< i; j++) {
+        myArr.push(str)
+    };
+
+    return myArr;
+};
+
+
+console.log(myFunction('moon', 3))
 
 
 
@@ -23,8 +34,13 @@
 
 // Put your answer below -------------------------
 
-
-
+myPets = ['Luna', 'Bruce', 'Chunky']
+const reverseArr= function(arr){
+    let reverse =arr.slice().reverse()
+    return reverse;
+    
+}
+console.log(reverseArr(myPets))
 
 
 
@@ -39,11 +55,13 @@
 // ---------------------
 
 // Put your answer below -------------------------
+let falsyArr = ["", 0, false, undefined, NaN, null, 1, 2, 3]
+const noFalsy = function(arr){
+    let truth = arr.filter(Boolean)
+    return truth
+}
 
-
-
-
-
+console.log(noFalsy(falsyArr))
 
 
 
@@ -59,10 +77,13 @@
 
 // Put your answer below -------------------------
 
+let myself = [['name', 'Shaun'], ['color', 'green'], ['age', 35]]
 
+const myFunction2 = function(arr){
+    return Object.fromEntries(arr)
+}
 
-
-
+console.log(myFunction2(myself))
 
 
 
@@ -76,8 +97,12 @@
 // ---------------------
 
 // Put your answer below -------------------------
-
-
+numArr = [1,1,1,2,2,3,4,5,5,4,3]
+const removeDuplicate = function(arr){
+    newArr = [...new Set(arr)];
+    return newArr;
+}
+console.log(removeDuplicate(numArr))
 
 
 
@@ -98,8 +123,24 @@
 
 // Put your answer below -------------------------
 
+let anotherArr1 = [1,2,3,4]
+let anotherArr2 = [1,2,3,4]
+let anotherArr3 = [1,2,3,4,7,5]
+let anotherArr4 = [1,4,3,2]
 
-
+const anotherFunction = function(arr1, arr2){
+    arr1 = arr1.sort()
+    arr2= arr2.sort()
+    if(arr1.length === arr2.length){
+        for(let i=0; i< arr1.length; i++)
+            if (arr1[i] === arr2[i]){
+                return true;
+            }
+    }else{
+        return false;
+    }
+}
+console.log(anotherFunction(anotherArr3, anotherArr4))
 
 
 

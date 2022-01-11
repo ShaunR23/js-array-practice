@@ -2,13 +2,31 @@
 // Testing 1-2-3
 // https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/javascript
 
-
-
+//come back to
+var number=function(array){
+    let results = []
+  
+  for(i=1 ; i <= array.length; i++){
+    results.push((i) + ': ' + array[i -1])
+}
+  return results;
+}
+    
+  
 
 // # 2
 // Filling an array (part 1)
 // https://www.codewars.com/kata/571d42206414b103dc0006a1/train/javascript
 
+const arr = N => {
+    const arr = [];
+    
+    for(let i = 0; i < N; i++) {
+      arr.push(i);
+    }
+    
+    return arr;
+  };
 
 
 
@@ -16,6 +34,17 @@
 // Drone Fly-By
 // https://www.codewars.com/kata/58356a94f8358058f30004b5/train/javascript
 
+//Pasts test but fails attempt, needs refactor
+function flyBy(lamps, drone){
+    let arr = [... lamps];
+    for(i=0 ; i< drone.length && lamps.length; i++){
+      arr[i] = 'o';
+     } 
+      
+      let str = arr.join('');
+      return str;
+    
+    }
 
 
 
@@ -23,9 +52,25 @@
 // Get the mean of an array
 // https://www.codewars.com/kata/563e320cee5dddcf77000158/train/javascript
 
-
+function getAverage(marks){
+    let total = 0
+    for(i=0 ; i < marks.length; i++)
+      total += marks[i]
+    let average = total / marks.length
+    average = Math.floor(average)
+    return average;
+  }
+  
 
 
 // #5
 // THE SOUL OF WIT: REVERSE AN ARRAY
 // https://www.codewars.com/kata/59b81886460387d8fc000043
+
+//I'm stuck, needs refactor
+const reverse = a => a.reverse();
+arr = []
+
+for(i=0 ; i<= a.length -1; i++){
+  reverseArr.unshift(a[i])
+}
